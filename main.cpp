@@ -1,6 +1,7 @@
 #include <iostream>
 
 import Line;
+import Math;
 
 int main()
 {
@@ -14,6 +15,13 @@ int main()
     auto const& dist = line.distance();
     std::cout << "dist.x() = " << dist.x() << '\n';
     std::cout << "dist.y() = " << dist.y() << '\n';
+
+    Vect2D vect2d { 2 , 3 };
+    std::cout << "vect2d.x() = " << vect2d.x() << '\n';
+
+    Vect3D vect3d { 7 , 3, 7 };
+    std::cout << "vect3d.x() = " << vect3d.x() << '\n';
+
 
     return EXIT_SUCCESS;
 }

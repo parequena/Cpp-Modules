@@ -25,12 +25,18 @@ all: $(OBJ_DIR)
 	$(CXX) $(DEBUG_FLAGS) $(CXX_FLAGS) -c src/Point2D.cpp -o $(OBJ_DIR)Point2D.o
 	$(CXX) $(DEBUG_FLAGS) $(CXX_FLAGS) -c src/Line_calc.cpp -o $(OBJ_DIR)Line_calc.o
 	$(CXX) $(DEBUG_FLAGS) $(CXX_FLAGS) -c src/Line.cpp -o $(OBJ_DIR)Line.o
+	$(CXX) $(DEBUG_FLAGS) $(CXX_FLAGS) -c src/Math/Vect2D.cpp -o $(OBJ_DIR)Math_Vect2D.o
+	$(CXX) $(DEBUG_FLAGS) $(CXX_FLAGS) -c src/Math/Vect3D.cpp -o $(OBJ_DIR)Math_Vect3D.o
+	$(CXX) $(DEBUG_FLAGS) $(CXX_FLAGS) -c src/Math/Math.cpp -o $(OBJ_DIR)Math_Math.o
 	$(CXX) $(DEBUG_FLAGS) $(CXX_FLAGS) main.cpp $(OBJ_DIR)*.o -o build/exe
 
 release: $(OBJ_DIR)
 	$(CXX) -O3 $(CXX_FLAGS) -c src/Point2D.cpp -o $(OBJ_DIR)Point2D.o
 	$(CXX) -O3 $(CXX_FLAGS) -c src/Line_calc.cpp -o $(OBJ_DIR)Line_calc.o
 	$(CXX) -O3 $(CXX_FLAGS) -c src/Line.cpp -o $(OBJ_DIR)Line.o
+	$(CXX) -O3 $(CXX_FLAGS) -c src/Math/Vect2D.cpp -o $(OBJ_DIR)Math_Vect2D.o
+	$(CXX) -O3 $(CXX_FLAGS) -c src/Math/Vect3D.cpp -o $(OBJ_DIR)Math_Vect3D.o
+	$(CXX) -O3 $(CXX_FLAGS) -c src/Math/Math.cpp -o $(OBJ_DIR)Math_Math.o
 	$(CXX) -O3 $(CXX_FLAGS) main.cpp $(OBJ_DIR)*.o -o build/exe
 	rm -fr build/obj/
 
