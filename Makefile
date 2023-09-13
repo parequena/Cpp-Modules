@@ -1,6 +1,6 @@
 .PHONY: all release cls info
 
-CXX := g++-12
+CXX := g++
 COMMON_WARN := -pedantic -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough
 CXX_FLAGS := -std=c++20
 
